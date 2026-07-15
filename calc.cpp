@@ -1,3 +1,4 @@
+
 #include <iostream>
 
 using namespace std;
@@ -10,7 +11,7 @@ int main() {
     cout << "Enter first number: ";
     cin >> num1;
 
-    cout << "Enter operator (+ or -): ";
+    cout << "Enter operator (+, -, *): ";
     cin >> operation;
 
     cout << "Enter second number: ";
@@ -25,8 +26,12 @@ int main() {
         result = num1 - num2;
         cout << "\nResult: " << num1 << " - " << num2 << " = " << result << endl;
     } 
+    else if (operation == '*') {
+        result = num1 * num2;
+        cout << "\nResult: " << num1 << " * " << num2 << " = " << result << endl;
+    } 
     else {
-        cout << "\nError: Invalid operator! Please use '+' or '-'." << endl;
+        cout << "\nError: Invalid operator! Please use '+', '-', or '*'." << endl;
     }
 
     return 0;
